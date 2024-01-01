@@ -1,0 +1,69 @@
+:root{
+    --main-color:#162938;
+    --hover-color:#00334e;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#page-3{
+    background-image: url(../images/wallpaperflare.com_wallpaper.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+html{
+    scroll-padding-top: 57px;
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 60px;
+    font-weight: 800;
+    font-style: italic;
+    text-transform: uppercase;
+}
+h1::selection{
+    background-color: #2dde98;
+}
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+.parent-2 {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    overflow: hidden;
+}
+.parent-2 h1 span{
+    font-size: 50px;
+}
+.navbar{
+    background-color: var(--main-color);
+}
+.navbar .navbar-brand {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-weight: bold;
+}
+.navbar-toggler-icon{
+    background-color: white;
+    border-radius: 6px;
+}
+.parent-2 .demo {
+    font-size: 60px;
+    font-weight: bold;
+}
+@media screen and (max-width:800px) {
+    .parent-2 .demo,
+    .parent-2 h1 span {
+        font-size: 40px;
+    }
+}

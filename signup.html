@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="images/user.png" type="image/x-icon">
+    <!-- -------------Google Fonts--------------- -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!----------------Font Awesome--------------- -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-------------- Main Bootstrap----------->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!--------------- style Css-------------->
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    
+<header id="homeee">
+    <div class="container text-center py-5">
+
+        <div class="parent-2 m-auto w-75 p-5">
+
+        <h1>Smart Login System</h1>
+        <input id="nameInput" oninput="validtionName() " type="text" class="w-100 my-3 form-control" placeholder="Enter your Name">
+        <p id="name-alert" class="text-danger mb-2 d-none">Name must be more than 3 characters</p>
+
+        <input id="emailInput" oninput="validtionEmail()" type="email" class="w-100 my-3 form-control" placeholder="Enter your email">
+        <p id="email-alert" class="text-danger mb-2 d-none">Invaild email (ex:example@ex.com)</p>
+        <input id="passwordInput" type="password" class="w-100 mb-4 form-control" placeholder="Enter your password">
+
+        <button id="btn" class="text-white w-100 mb-3 zer">Sign Up</button>
+
+        <p>You have an account? <a href="./index.html">Sign in</a></p>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/signup.js"></script>
+</body>
+</html>

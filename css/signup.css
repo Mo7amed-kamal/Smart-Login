@@ -1,0 +1,68 @@
+:root{
+    --main-color:#162938;
+    --hover-color:#00334e;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#homeee{
+    background-image: url(../images/two.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #162938;
+}
+h1::selection{
+    background-color: #2dde98;
+}
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+.parent-2 {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+.zer {
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    outline: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.zer:hover {
+    background-color: var(--hover-color);
+}
+p {
+    color: #212529;
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin: 5px 0 10px;
+}
+.parent-2 p a {
+    font-weight: 600;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.parent-2 p a:hover{
+    text-decoration: underline;
+}

@@ -1,0 +1,142 @@
+:root{
+    --main-color:#162938;
+    --hover-color:#00334e;
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+#home{
+    background-image: url(../images/one.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 100vh;
+}
+h1{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 50px;
+    font-weight: bold;
+    font-style: italic;
+    color: #162938;
+}
+h1::selection{
+    background-color: #2dde98;
+}
+@media screen and (max-width:800px) {
+    h1 {
+        font-size: 40px;
+    }
+}
+.parent {
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, .5);
+    border-radius: 10px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+}
+.zer {
+    background: var(--main-color);
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+    border: none;
+    height: 40px;
+    outline: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+.zer:hover {
+    background-color: var(--hover-color);
+}
+p{
+    color: #212529;
+    font-size: 18px;
+    /* font-weight: bold; */
+    margin: 5px 0 10px;
+}
+.parent p a {
+    font-weight: 600;
+    font-weight: bold;
+    color: var(--main-color);
+}
+.parent p a:hover{
+    text-decoration: underline;
+}
+
+/* for animation */
+.layerTop {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    z-index: 555;
+    animation: 1s top;
+    animation-fill-mode: forwards;
+  }
+  .layerBottom {
+    position: fixed;
+    bottom: 50%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: black;
+    z-index: 55555;
+    animation: 1s bottom;
+    animation-fill-mode: forwards;
+  }
+  @keyframes top {
+    form{
+      top: 50%;
+    }
+    to {
+      top: 100%;
+      opacity: 0;
+    }
+  }
+  @keyframes bottom {
+    form{
+    bottom: 50%;
+    }
+    to {
+      bottom: 100%;
+      opacity: 0;
+    }
+  }
+  .layerLoading {
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: transparent;
+    border: 10px solid;
+    border-color: #eee black #eee #eee;
+    border-radius: 50%;
+    z-index: 5555555;
+    animation: 1.5s load infinite, 1.5s 1.5s load2;
+    animation-fill-mode: forwards;
+  }
+  @keyframes load {
+    form {
+      transform: translate(-50%, -50%) rotate(0deg);
+    }
+    to{
+      transform: translate(-50%, -50%) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  @keyframes load2 {
+    form {
+      display: block;
+    }
+    to{
+      display: none;
+    }
+  }
